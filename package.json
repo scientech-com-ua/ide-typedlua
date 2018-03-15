@@ -1,9 +1,9 @@
 {
-  "name": "ide-typescript",
+  "name": "ide-typedlua",
   "main": "./lib/main",
-  "version": "0.7.5",
-  "description": "TypeScript and JavaScript language support for Atom-IDE.",
-  "repository": "https://github.com/atom/ide-typescript",
+  "version": "0.1.0",
+  "description": "TypedLua language support for Atom-IDE.",
+  "repository": "https://github.com/scientech-com-ua/ide-typedlua",
   "license": "MIT",
   "engines": {
     "atom": ">=1.21.0"
@@ -12,13 +12,13 @@
     "diagnosticsEnabled": {
       "type": "boolean",
       "default": true,
-      "description": "Use the TypeScript language server to provide diagnostics and warnings."
+      "description": "Use the TypedLua language server to provide diagnostics and warnings."
     },
-    "javascriptSupport": {
+    "luaSupport": {
       "type": "boolean",
-      "title": "JavaScript support",
+      "title": "Lua support",
       "default": true,
-      "description": "Use the TypeScript language server to also provide services for JavaScript."
+      "description": "Use the TypedLua language server to also provide services for Lua."
     },
     "returnTypeInAutocomplete": {
       "type": "string",
@@ -37,14 +37,14 @@
     }
   },
   "dependencies": {
-    "atom-languageclient": "0.9.1",
-    "javascript-typescript-langserver": "^2.7.0"
+    "atom-languageclient": "0.9.1"
   },
   "enhancedScopes": [
-    "source.ts",
-    "source.tsx",
-    "source.js",
-    "source.js.jsx"
+    "source.tl",
+    "source.tdl",
+    "source.typed.lua",
+    "source.t.lua",
+    "source.lua"
   ],
   "consumedServices": {
     "datatip": {
@@ -54,7 +54,7 @@
     },
     "linter-indie": {
       "versions": {
-        "2.0.0": "consumeLinterV2"
+        "0.1.0": "consumeLinterV2"
       }
     },
     "signature-help": {
@@ -66,7 +66,7 @@
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
-        "2.0.0": "provideAutocomplete"
+        "0.1.0": "provideAutocomplete"
       }
     },
     "code-actions": {
