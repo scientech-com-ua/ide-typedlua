@@ -6,7 +6,7 @@
   "repository": "https://github.com/scientech-com-ua/ide-typedlua",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.21.0"
+    "atom": ">=1.19.2"
   },
   "configSchema": {
     "diagnosticsEnabled": {
