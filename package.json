@@ -1,7 +1,7 @@
 {
   "name": "ide-typedlua",
   "main": "./lib/main",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypedLua language support for Atom-IDE.",
   "repository": "https://github.com/scientech-com-ua/ide-typedlua",
   "license": "MIT",
